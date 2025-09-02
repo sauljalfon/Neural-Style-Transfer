@@ -147,32 +147,5 @@ Modify `STYLE_LAYERS` to emphasize different aspects:
 - **β (beta)**: Higher values apply stronger style transfer
 - **Learning rate**: Affects convergence speed and stability
 
-## Performance
-
-- **Training Time**: ~20-30 minutes for 5000 epochs on A100 GPU
-- **Memory Usage**: ~8-12GB GPU memory for 400×400 images
-- **Convergence**: Visible results after ~1000 epochs
-
-## Troubleshooting
-
-### Common Issues
-
-1. **VGG19 Loading Error**: Use `weights='imagenet'` instead of local path
-2. **GPU Memory**: Reduce `img_size` or batch operations
-3. **Slow Training**: Ensure GPU acceleration is enabled in Colab
-
-### Tips
-
-- Start with lower resolution (200×200) for faster experimentation
-- Try different content/style weight ratios for various effects
-- Use high-contrast style images for more dramatic results
-
-## References
-
-- [Gatys et al. - A Neural Algorithm of Artistic Style](https://arxiv.org/abs/1508.06576)
-- [TensorFlow Neural Style Transfer Tutorial](https://www.tensorflow.org/tutorials/generative/style_transfer)
-- [VGG19 Architecture](https://arxiv.org/abs/1409.1556)
-
-## License
 
 This project is open source and available under the MIT License.
